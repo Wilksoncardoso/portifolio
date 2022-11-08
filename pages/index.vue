@@ -8,7 +8,7 @@
           </v-col>
           <v-col class="text-center text-lg-left text-xl-left"  cols="12" lg="6" xl="5" md="6" sm="12" xs="6">
             <span class="font-weight-medium primary--text text-h3">
-                UX / UI</span
+                UX / UI teste</span
               >
             <h1 class="text-h2 text-lg-h1 font-weight-black ">Wilkson</h1>
             <h1 class="text-h2 text-lg-h1 font-weight-black mb-3 ">
