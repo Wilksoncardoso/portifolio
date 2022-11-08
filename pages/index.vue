@@ -216,28 +216,6 @@ body {
     text-align: center;
   }
 }
-.mobile--text--h1{
-  @media (max-width: 400px){
-  font-size: 4rem !important;
-  }
-  @media  (min-width: 400px)and(max-width: 500px){
-  font-size: 5rem !important;
-  }
-  @media (min-width: 500px)and(max-width: 1000px){
-  font-size: 6rem !important;
-  line-height:90px;
 
-  }
-  @media (min-width: 1000px)and(max-width: 1500px){
-  font-size: 6rem !important;
-  line-height:90px;
-  }
-  @media (min-width: 1500px){
-  font-size: 6rem !important;
-  line-height: 1;
-  }
-}
-.footer {
-  background: #fff;
-}
+
 </style>
