@@ -131,7 +131,7 @@ export default {
       Montserrat: true,
     },
   },
-  ssr: true,
+  ssr: false,
   target: "static",
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/http", "@nuxt/image"],

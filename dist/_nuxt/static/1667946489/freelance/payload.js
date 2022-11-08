@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/freelance", {data:[{_img:{}}],fetch:{},mutations:void 0});
