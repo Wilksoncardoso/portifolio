@@ -18,7 +18,7 @@
           </p>
           <p class="text-caption white--text mb-2"> Fazer o complexo se tornar simples !</p>
           <p class="text-caption white--text mb-0">
-            Desenvolvido em Vue3 + NuxtJS + Vuetify
+            Desenvolvido Vue3 + NuxtJS + Vuetify
             <v-icon color="primary" dark> mdi-vuetify</v-icon>
           </p>
           <v-divider class="my-3  d-sm-none"></v-divider>
