@@ -284,7 +284,6 @@
       class="will__img"
       loading="lazy"
       format="webp"
-     provider="netlify"
     />
   </div>
 </template>

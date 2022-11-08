@@ -86,13 +86,12 @@
           <v-col cols="12" class="text-center">
             <v-avatar width="80%" height="100%" class="my-3 mx-auto">
               <nuxt-img
-                src="/1000x1000/c1f2c94ea2/will__perfil.webp"
+                src="/img/will__perfil.webp"
                 alt="Wilkson cardoso, UX / UI"
                 sizes="xs:200px sm:350px md:400px lg:400px xl:500px"
                 width="100"
                 height="100"
                 class="img__end mt-5"
-                provider="storyblok"
                 loading="lazy"
                 preload
               />

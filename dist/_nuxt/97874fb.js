@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6,5],{75:function(t,c,n){"use strict";n.d(c,"a",(function(){return _})),n.d(c,"b",(function(){return w}));var e=n(510),r=n(0),d=Object(r.h)("v-card__actions"),o=Object(r.h)("v-card__subtitle"),_=Object(r.h)("v-card__text"),w=Object(r.h)("v-card__title");e.a}}]);

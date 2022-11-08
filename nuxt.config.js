@@ -136,10 +136,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/http", "@nuxt/image"],
   image: {
-    provider: "storyblok",
-    storyblok:{
-      baseURL:'https://a.storyblok.com/f/182555/'
-    }
+    provider: "netlify",
+    // storyblok:{
+    //   baseURL:'https://a.storyblok.com/f/182555/'
+    // }
     // domains: ['http://localhost:8000']
   },
 
