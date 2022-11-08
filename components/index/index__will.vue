@@ -280,9 +280,10 @@
       alt="Wilkson cardoso, UX / UI"
       width="100%"
       height="100%"
-      sizes=" xs:100px md:300px lg:800px xl:1200px"
+      sizes=" sm:50vw md:80vw lg:100vw xl:140vw"
       class="will__img"
       loading="lazy"
+      format="webp"
 
     />
   </div>
