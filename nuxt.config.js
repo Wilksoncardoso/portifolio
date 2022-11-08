@@ -192,7 +192,7 @@ export default {
     },
   },
   generate: {
-    dir: "my-site",
+    dir: "dist",
     subFolders: false,
     fallback: "404.html",
     ignore: [
