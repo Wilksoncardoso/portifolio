@@ -276,7 +276,7 @@
     <!-- <nuxt-img  src="/img/will__persona.webp"   class="will__img"  alt="Wilkson cardoso, UX / UI" /> -->
 
     <nuxt-img
-      src="/1585x2243/87c5f8d3fc/will__persona.webp"
+      src="/img/will__persona.webp"
       alt="Wilkson cardoso, UX / UI"
       width="100%"
       height="100%"
@@ -284,7 +284,7 @@
       class="will__img"
       loading="lazy"
       format="webp"
-
+     provider="netlify"
     />
   </div>
 </template>
