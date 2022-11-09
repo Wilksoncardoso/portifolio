@@ -88,7 +88,7 @@
     </v-container>
   </div>
 </template>
-<script>
+<script >
 import simplicidade from "../freelance__session/simplicidade__.vue";
 import background from "../background/freelance.vue";
 

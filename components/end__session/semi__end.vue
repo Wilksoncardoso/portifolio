@@ -34,7 +34,7 @@
         <v-col cols="10" lg="5" xl="4" md="5">
           <nuxt-img
             format="webp"
-            src="/img/wilkson__business.webp"
+            src="/img/wilkson__business_fgtnhn.webp"
             alt="Estrategia em todos seguimentos, pratico e rápido !"
             width="100%"
             height="100%"

@@ -276,14 +276,13 @@
     <!-- <nuxt-img  src="/img/will__persona.webp"   class="will__img"  alt="Wilkson cardoso, UX / UI" /> -->
 
     <nuxt-img
-      src="/img/will__persona.webp"
+      src="/img/will__persona_aibscp.webp"
       alt="Wilkson cardoso, UX / UI"
       width="100%"
       height="100%"
       sizes=" sm:8vw md:20vw lg:500px "
       class="will__img"
       loading="lazy"
-      format="webp"
     />
   </div>
 </template>

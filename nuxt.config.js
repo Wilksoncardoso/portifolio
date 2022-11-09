@@ -136,10 +136,11 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/http", "@nuxt/image"],
   image: {
-    provider: "netlify",
-    // storyblok:{
-    //   baseURL:'https://a.storyblok.com/f/182555/'
-    // }
+    provider: "cloudinary",
+    cloudinary:{
+      // baseURL:'https://a.storyblok.com/f/182555/'
+      baseURL:'https://res.cloudinary.com/djtomydsv/image/upload/v1667952287/'
+    }
     // domains: ['http://localhost:8000']
   },
 

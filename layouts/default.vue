@@ -86,7 +86,7 @@
           <v-col cols="12" class="text-center">
             <v-avatar width="80%" height="100%" class="my-3 mx-auto">
               <nuxt-img
-                src="/img/will__perfil.webp"
+                src="img/will__perfil_aog6zz.webp"
                 alt="Wilkson cardoso, UX / UI"
                 sizes="xs:200px sm:350px md:400px lg:400px xl:500px"
                 width="100"
