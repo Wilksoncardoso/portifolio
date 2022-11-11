@@ -46,6 +46,8 @@
 import links from "../links/index.vue";
 import logo from "./will__logo.vue";
 export default {
+  layout:'onelayout',
+  name:'footer',
   components: {
     links,logo
   },

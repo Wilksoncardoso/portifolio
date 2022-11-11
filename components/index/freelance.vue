@@ -1,9 +1,10 @@
 <template>
   <div id="consultoria" >
-    <v-container>
-      <v-row class="justify-space-around" align="center">
+
+    <v-container class="">
+      <v-row class="justify-space-around " align="center">
         <v-col class="text-center" cols="12">
-          <h1 class="mb-0 white--text" >
+          <h1 class="mb-0 white--text mt-xl-10" >
             <span class="text-h4  mr-2">#</span> FREELANCE
             <span class="text-h2">&</span> CONSULTORIA
           </h1>
@@ -91,9 +92,10 @@
 <script >
 import simplicidade from "../freelance__session/simplicidade__.vue";
 import background from "../background/freelance.vue";
+import menu__slin from '../menu/menu__slin.vue'
 
 export default {
-  components: { simplicidade, background },
+  components: { simplicidade, background, menu__slin},
   data() {
     return {
       data: [

@@ -1,12 +1,13 @@
 <template >
-  <div class="sessao__fist" >
+  <div class="sessao__fist mt-xl-16" >
     <div class="card__index__fist">
-      <v-container class="sessao__margin">
+      <v-container class="sessao__margin my-xl-16">
         <v-row class="justify-center" align="center">
           <v-col class="ma-xs-5" cols="12" lg="6" xl="4" md="6" sm="8" xs="6">
             <index__sessao />
+
           </v-col>
-          <v-col class="text-center text-lg-left text-xl-left"  cols="12" lg="6" xl="5" md="6" sm="12" xs="6">
+          <v-col class="text-center text-lg-left text-xl-left mb-16"  cols="12" lg="6" xl="5" md="6" sm="12" xs="6">
             <span class="font-weight-medium primary--text text-h3">
                 UX / UI </span
               >
@@ -74,9 +75,10 @@ import desafio__session from '../components/index/session__desafio.vue'
 import end__session from "../components/end__session/end.vue";
 // end sessao
 
-
+import menu__slin from '../components/menu/menu__slin.vue'
 
 export default {
+  layout:'onelayout',
   name: "IndexPage",
   data() {
     return {
@@ -116,7 +118,8 @@ export default {
     menu_top,
     top__secon__sessao,
     sessao__secon,
-    end__session
+    end__session,
+    menu__slin
 
 },
   computed: {
@@ -131,6 +134,8 @@ export default {
       };
     },
   },
+
+
 
 };
 </script>
@@ -201,7 +206,7 @@ body {
 }
 
 .card__index__fist {
-  padding: 18vh 0;
+  padding: 2vh 0;
   background: var(--background-fist);
   /* @media (min-width: 1300px) {
     padding: 18vh 0;

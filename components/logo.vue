@@ -1,5 +1,5 @@
-<template lang="">
-  <div>
+<template >
+  <div >
     <a href="/" aria-label="retornar ao inicio">
       <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 187.076 60.568" class="logo__">
   <g id="Grupo_53" data-name="Grupo 53" transform="translate(100.567 21.866)">
@@ -68,24 +68,8 @@ export default {
 </script>
 <style lang="scss">
 .logo__ {
-  @media (min-width: 1500px) {
-    width: 17vh;
-  }
-  @media (min-width: 1000px) and (max-width: 1500px) {
-    position: relative;
-    top: 5px;
-    width: 23vh;
-  }
-  @media (min-width: 500px) and (max-width: 1000px) {
-    position: relative;
-    top: 5px;
-    width: 160px;
-  }
-  @media (max-width: 500px) {
-    position: relative;
-    top: 5px;
-    width: 19vh;
-  }
+  width: 100% !important;
+  height: 100% !important;
   #logo_comlemento,
   #background_label_logo,
   #solucoes {
