@@ -76,6 +76,7 @@ export default {
     return {
       drawer: false,
       group: null,
+      switch1:true
     }
   },
   methods:{
