@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "WILKSON CARDOSO | UX | UI | PO ",
+    titleTemplate: "Wilkson Cardoso| UX | UI | PO ",
 
     // title: "Wilkson Cardoso",
     htmlAttrs: {
