@@ -48,7 +48,7 @@
     <!-- <end__session /> -->
   </div>
 </template>
-<script defer>
+<script>
 import top__sessao from "../components/divider/Top__index__sessao.vue";
 import top__secon__sessao from "../components/divider/Top__secon__sessao.vue";
 // divider sessao

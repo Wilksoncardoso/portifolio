@@ -574,16 +574,7 @@ export default {
 </script>
 <style lang="scss">
 
-/* .theme--light {
-  .grandes__desafios {
-    background: #fbfbfb;
-  }
-}
-.theme--dark {
-  .grandes__desafios {
-    background: #2c2c2c;
-  }
-} */
+
 .border--right {
   border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
