@@ -9,7 +9,7 @@
 import menu__slin from '../components/menu/menu__slin.vue';
 import footer__ from '../components/footer/index.vue'
 export default {
-
+name:'oneLayout',
   components: {
     menu__slin,
     footer__
