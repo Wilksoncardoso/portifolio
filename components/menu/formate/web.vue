@@ -13,10 +13,8 @@
                   <li class="mb-0" v-for="data in links">
                     <v-btn color="primary" :key="data.id" :to="data.link" :class="[data.status, ]"
                       class="nav__button mr-2 px-4 py-2" rounded>
-                      <div style="display:ruby">
                         <v-icon small color="white">mdi-{{ data.icon }}</v-icon>
                         <h6 class="text-small font-weight-regular text--white" >{{ data.tooltip }}</h6>
-                      </div>
                     </v-btn>
                   </li>
                   <li class="mb-0">
@@ -205,7 +203,7 @@ export default {
         align-items: flex-end;
 
         ul {
-          display: block ruby;
+          display:-webkit-inline-box;
           list-style: none;
           height: 40px;
 
