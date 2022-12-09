@@ -52,7 +52,7 @@
   <v-spacer></v-spacer>
   <v-switch class="mt-5 ml-3"  v-model="switch1" inset v-on:change="theme()"
                       aria-label="Mudança de light || Dark"></v-switch>
-                      <modal__color  aria-label="Escolha de COR"/>
+                      <modal__color  />
   <v-app-bar-nav-icon @click="drawer = true"  aria-label="Menu item"></v-app-bar-nav-icon>
 
 

@@ -2,7 +2,7 @@
   <div>
     <v-dialog transition="dialog-top-transition" max-width="400">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="primary"   v-bind="attrs" v-on="on" fab x-small >
+        <v-btn color="primary"   v-bind="attrs" v-on="on" fab x-small aria-label="Escolha de COR">
           <v-icon color="white">mdi-palette</v-icon>
         </v-btn>
       </template>
