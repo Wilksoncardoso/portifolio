@@ -10,19 +10,19 @@
             Todos direitos reservados
             <a
               href="https://www.linkedin.com/in/wilksonkardoso/"
-              class="white--text"
+              class=""
               target="_blank"
               rel="Linkedin"
               >@WilksonCardoso</a
             >
           </p>
-          <p class="text-caption white--text mb-2"> Fazer o complexo se tornar simples !</p>
-          <p class="text-caption white--text mb-0">
+          <p class="text-caption  mb-2"> Fazer o complexo se tornar simples !</p>
+          <p class="text-caption  mb-0">
             Desenvolvido Vue3 + NuxtJS + Vuetify
             <v-icon color="primary" dark> mdi-vuetify</v-icon>
           </p>
           <v-divider class="my-3  d-sm-none"></v-divider>
-          <p class="text-caption white--text  d-sm-none">Me encontre, através</p>
+          <p class="text-caption   d-sm-none">Me encontre, através</p>
 
           <links class=" d-sm-none" />
 
@@ -35,7 +35,7 @@
           xl="3"
           class="text-center text-xl-right text-lg-right mb-0 mt-2  d-md-block d-xs-none"
         >
-        <p class="text-caption white--text mb-2">Me encontre, através</p>
+        <p class="text-caption  mb-2">Me encontre, através</p>
           <links  />
         </v-col>
       </v-row>

@@ -1,7 +1,7 @@
 <template >
-  <div class="sessao__fist mt-xl-16" >
+  <div class="sessao__fist mt-16 mt-xl-16 mt-lg-16" >
     <div class="card__index__fist">
-      <v-container class="sessao__margin my-xl-16">
+      <v-container class="sessao__margin my-xl-16 my-lg-16">
         <v-row class="justify-center" align="center">
           <v-col class="ma-xs-5" cols="12" lg="6" xl="4" md="6" sm="8" xs="6">
             <index__sessao />

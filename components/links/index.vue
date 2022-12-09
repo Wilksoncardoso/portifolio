@@ -21,7 +21,7 @@
 export default {
   data() {
     return {
-      contato: [
+      contato:[
         {
           id: 0,
           label: "Telefone",
@@ -45,14 +45,27 @@ export default {
         },
         {
           id: 3,
+          label: "Github",
+          type: "",
+          icon: "github",
+          link: "https://github.com/Wilksoncardoso",
+        },
+        {
+          id: 4,
           label: "E-mail",
           type: "mailto:",
           icon: "email-fast",
           link: "eng.wilksoncardoso@gmail.com",
         },
-      ],
+      ]
     };
   },
+
+  computed:{
+    contatos(){
+     return this.contato = contato
+    }
+  }
 };
 </script>
 <style lang="">

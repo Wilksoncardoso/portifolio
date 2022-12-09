@@ -280,7 +280,7 @@
       alt="Wilkson cardoso, UX / UI"
       width="100%"
       height="100%"
-      sizes=" sm:140px md:350px lg:450px "
+      sizes=" sm:280px md:350px lg:450px "
       class="will__img"
       loading="lazy"
     />
@@ -317,7 +317,7 @@ export default {
 
   @media (min-width: 1000px) and (max-width: 1500px) {
     width: 30vh;
-    bottom: 9vh;
+    bottom: 3.7rem;
   }
 
   @media (max-width: 600px) {

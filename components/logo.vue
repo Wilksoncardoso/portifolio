@@ -70,17 +70,7 @@ export default {
 .logo__ {
   width: 100% !important;
   height: 100% !important;
-  #logo_comlemento,
-  #background_label_logo,
-  #solucoes {
-    @media (max-width: 500px) {
-      display: none;
-    }
-  }
-  .theme--light {
-    #background_label_logo {
-      background: red !important;
-    }
-  }
+
+
 }
 </style>

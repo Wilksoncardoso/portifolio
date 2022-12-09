@@ -100,10 +100,8 @@ export default {
       },
     ],
   },
-  loading: {
-    color: "blue",
-    height: "5px",
-  },
+
+  devServerHandlers: [],
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -150,7 +148,7 @@ export default {
     treeShake: true,
     defaultAssets: false,
     theme: {
-      dark: false,
+      dark: true,
       themes: {
         dark: {
           primary: "#0E58A5",
@@ -170,12 +168,12 @@ export default {
       iconfont: "mdiSvg",
     },
   },
+  loading: { color: '#0E58A5' },
   server: {
     port: 8000, // default: 3000
     host: "0.0.0.0", // default: localhost,
     timing: false,
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extractCSS: true,
@@ -209,4 +207,5 @@ export default {
       ignore: ['renovate.json'] // ignore changes applied on this file
     }
   },
+
 };
