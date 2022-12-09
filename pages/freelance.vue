@@ -12,7 +12,6 @@ import Freelance from '../components/index/freelance.vue'
 import semi__end from "../components/end__session/semi__end.vue";
 
 export default {
-  layout:'oneLayout',
   name: "FreelancePage",
 
   components:{

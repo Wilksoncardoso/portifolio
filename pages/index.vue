@@ -78,7 +78,6 @@ import end__session from "../components/end__session/end.vue";
 import menu__slin from '../components/menu/menu__slin.vue'
 
 export default {
-  layout:'oneLayout',
   name: "IndexPage",
   data() {
     return {
