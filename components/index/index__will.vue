@@ -272,8 +272,7 @@
         />
       </g>
     </svg>
-    <!-- <nuxt-img provider="static" src="/img/will__persona.webp" placeholder loading="lazy"  class="will__img"   /> -->
-    <!-- <nuxt-img  src="/img/will__persona.webp"   class="will__img"  alt="Wilkson cardoso, UX / UI" /> -->
+  
 
     <nuxt-img
       src="/img/will__persona_aibscp.webp"
