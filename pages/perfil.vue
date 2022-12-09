@@ -7,7 +7,8 @@
 import Fist__session from "../components/perfil__page/index.vue";
 export default {
   name: "PerfilPage",
-  components:{Fist__session}
+  components:{Fist__session},
+
 }
 </script>
 <style lang="scss">

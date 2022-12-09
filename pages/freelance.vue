@@ -1,4 +1,4 @@
-<template lang="">
+<template >
   <div>
     <Freelance class="sessao__margin" />
     <semi__end />
