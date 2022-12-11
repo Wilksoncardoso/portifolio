@@ -1,7 +1,7 @@
 <template >
     <div class=" position-relative ">
         <nuxt-img src="img/persona__right.webp" alt="Wilkson cardoso, UX / UI"
-            sizes=" sm:384px md:400px lg:400px xl:80vw" class=" mt-5 will__index" loading="lazy" preload />
+            sizes=" sm:384px md:400px lg:400px xl:60vw" class=" mt-5 will__index" loading="lazy" preload />
         <background />
 
         <v-container>
