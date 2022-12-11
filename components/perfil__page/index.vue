@@ -1,15 +1,15 @@
 <template >
-  <div class="perfil">
+  <div >
     <v-container>
-      <v-row class="justify-center " align="center" style="height: 100vh;">
+      <v-row class="justify-center perfil" align="center">
         <v-col cols="12" lg="4" xl="3" class="text-center">
           <v-avatar width="100%" height="100%" class="my-3 mx-auto" elevation="10">
             <nuxt-img src="img/will__perfil_aog6zz.webp" alt="Wilkson cardoso, UX / UI"
               sizes=" sm:384px md:400px lg:400px xl:110vw" class=" mt-5 " loading="lazy" preload />
           </v-avatar>
         </v-col>
-        <v-col class="mt-xl-16 mt-lg-16 " cols="12" lg="6" xl="5">
-          <v-card class="px-xl-10 py-xl-8" elevation="10">
+        <v-col class="mb-10 mt-xl-16 mt-lg-16 " cols="12" lg="6" xl="5">
+          <v-card class="px-5 py-5 px-xl-10 py-xl-8" elevation="10">
             <h1 class=" primary--text">
               Wilkson A. Cardoso
             </h1>
@@ -85,3 +85,11 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.perfil{
+  @media (min-width: 1200px){
+    height: 100vh;
+  }
+
+}
+</style>
