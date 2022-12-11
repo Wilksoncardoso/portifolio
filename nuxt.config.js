@@ -43,13 +43,13 @@ export default {
       },
     ],
     link: [
-      {
-        rel: "preload",
-        as: "style",
-        media: "all",
-        href: "/css/materialdesignicons.css",
-        onload:"this.onload=null;this.rel='stylesheet'"
-      },
+      // {
+      //   rel: "preload",
+      //   as: "style",
+      //   media: "all",
+      //   href: "/css/materialdesignicons.css",
+      //   onload:"this.onload=null;this.rel='stylesheet'"
+      // },
 
       {
         rel: "icon",
@@ -87,21 +87,23 @@ export default {
       { rel: "apple-touch-icon", sizes: "180x180", href: "/icon/180x180.png" },
 
     ],
-    noscript: [
-      {
-        link:[
-          {
-            rel: "preconnect",
-            href: "/css/materialdesignicons.css",
-          },
-        ]
-      },
-    ],
+    // noscript: [
+    //   {
+    //     link:[
+    //       {
+    //         rel: "preconnect",
+    //         href: "/css/materialdesignicons.css",
+    //       },
+    //     ]
+    //   },
+    // ],
   },
 
   devServerHandlers: [],
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '@mdi/font/css/materialdesignicons.min.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -113,6 +115,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
+    ['@nuxtjs/vuetify', { iconfont: 'mdi' }],
     "@nuxtjs/google-fonts",
     "@nuxt/image",
 
