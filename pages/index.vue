@@ -1,11 +1,19 @@
 <template >
-  <div class="sessao__fist mt-16 mt-xl-16 mt-lg-16" >
-    <div class="card__index__fist">
-      <v-container class="sessao__margin my-xl-16 my-lg-16">
+  <div class=" mt-16 mt-xl-16 mt-lg-16 " >
+    <!-- <div class="card__index__fist ">
+      <v-container class="sessao__margin my-xl-16 my-lg-16 position-relative">
         <v-row class="justify-center" align="center">
           <v-col class="ma-xs-5" cols="12" lg="6" xl="4" md="6" sm="8" xs="6">
             <index__sessao />
-
+            <nuxt-img
+            src="/img/will__persona_aibscp.webp"
+            alt="Wilkson cardoso, UX / UI"
+            width="100%"
+            height="100%"
+            sizes=" sm:211px md:260px lg:380px "
+            class="will__img"
+            loading="lazy"
+          />
           </v-col>
           <v-col class="text-center text-lg-left text-xl-left mb-16"  cols="12" lg="6" xl="5" md="6" sm="12" xs="6">
             <span class="font-weight-medium primary--text text-h3">
@@ -31,8 +39,9 @@
           </v-col>
         </v-row>
       </v-container>
-    </div>
+    </div> -->
     <!-- <top__sessao /> -->
+    <fist__sessao />
 
     <sobre__will__atualizado />
     <!-- <sobre__bottom/> -->
@@ -49,11 +58,12 @@
   </div>
 </template>
 <script>
+import fist__sessao from "../components/index/fist/fist__sessao.vue";
+
+
 import top__sessao from "../components/divider/Top__index__sessao.vue";
-import top__secon__sessao from "../components/divider/Top__secon__sessao.vue";
 // divider sessao
 
-import index__sessao from "../components/index/index__will.vue"; //fist sessao
 import sessao__secon from "../components/index/secon__sessao.vue"; //hard skill
 // conteudo de sessao
 
@@ -79,43 +89,14 @@ import menu__slin from '../components/menu/menu__slin.vue'
 
 export default {
   name: "IndexPage",
-  data() {
-    return {
-      icons: [
-        {
-          id:0,
-          icon: "application-braces-outline",
-          text: "Desenvolvimento",
-        },
-        {
-          id:1,
-          icon: "airballoon",
-          text: "Inovação",
-        },
-        {
-          id:2,
-          icon: "file-tree-outline",
-          text: "Prototipação",
-        },
-        {
-          id:3,
-          icon: "fingerprint",
-          text: "Identidade visual",
-        },
 
-      ],
-
-    };
-  },
   components: {
-    top__sessao,
     desafio__session,
-    index__sessao,
     sessao__cards,
     sobre__will__atualizado,
     sobre__bottom,
     menu_top,
-    top__secon__sessao,
+    fist__sessao,
     sessao__secon,
     end__session,
     menu__slin
@@ -220,6 +201,5 @@ body {
     text-align: center;
   }
 }
-
 
 </style>

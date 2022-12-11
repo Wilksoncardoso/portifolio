@@ -1,5 +1,5 @@
 <template >
-  <div class="grandes__desafios">
+  <div class="grandes__desafios" >
     <v-container class="sessao__margin sessao__hard__skill">
       <v-row class="justify-space-around">
         <v-col cols="12">
@@ -112,7 +112,7 @@
           </v-card> -->
         </v-col>
           <v-divider class="text-center item__apenas__web" vertical></v-divider>
-        <v-col cols="12" xl="7" lg="7" md="7" sm="12">
+        <v-col cols="12" xl="7" lg="7" md="7" sm="12" id="projetos">
           <v-card class="px-5 py-10" elevation="10">
             <v-row class="mb-0">
               <v-col cols="7" class="mb-0">

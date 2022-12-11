@@ -1,6 +1,5 @@
 <template >
   <div :style="cssProps" id="Sobre">
-    <sobre__top />
     <v-container>
       <v-row class="py-10 row justify-space-around align-center">
         <v-col cols="12" xl="4" lg="5" sm="6">
