@@ -93,7 +93,7 @@ export default {
       {
         link:[
           {
-            rel: "stylesheet",
+            rel: "preconnect",
             href: "/css/materialdesignicons.css",
           },
         ]

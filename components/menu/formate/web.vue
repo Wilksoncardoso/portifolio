@@ -1,4 +1,4 @@
-<template lang="">
+<template >
   <div>
     <div class="card__menu">
       <v-card class=" mx-auto">
@@ -214,6 +214,7 @@ export default {
 
         .nav__button {
           opacity: 0.4;
+
         }
         .v-btn--active  .nav__button {
           opacity: 1 !important;

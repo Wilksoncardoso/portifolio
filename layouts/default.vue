@@ -1,5 +1,5 @@
 <template >
-  <v-app dark id="app" style="overflow-x:hidden !important">
+  <v-app dark id="app" style="overflow-x:hidden !important; ">
     <menu__slin />
     <Nuxt />
     <footer__ />
