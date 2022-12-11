@@ -35,8 +35,8 @@
                 {{ new__data.conteudo }}
               </p>
 
-              <ul v-for="list in new__data.item_list" :key="list.id_item">
-                <li>{{ list.valor }}</li>
+              <ul >
+                <li v-for="list in new__data.item_list" :key="list.id_item">{{ list.valor }}</li>
               </ul>
 
               <div v-if="new__data.selecao === 'dev'">
@@ -44,14 +44,14 @@
                   <span class="text-h5 primary--text mr-2">#</span>Front-End
                 </h3>
 
-                <ul v-for="list_ in new__data.list__front" :key=" 'A'+list_.id_item">
-                  <li>{{ list_.valor }}</li>
+                <ul  >
+                  <li v-for="list_ in new__data.list__front" :key=" 'A'+list_.id_item" >{{ list_.valor }}</li>
                 </ul>
                 <h3 class="mb-0">
                   <span class="text-h5 primary--text mr-2">#</span>Back-End
                 </h3>
-                <ul v-for="list in new__data.list__back" :key="'B'+ list.id_item">
-                  <li color="primary">{{ list.valor }}</li>
+                <ul  >
+                  <li v-for="list in new__data.list__back" :key="'B'+ list.id_item" color="primary">{{ list.valor }}</li>
                 </ul>
               </div>
 
@@ -60,8 +60,8 @@
                   <span class="text-h5 primary--text mr-2">#</span>Equipe
                 </h3>
 
-                <ul v-for="list_ in new__data.list__management" :key="list_.id">
-                  <li>{{ list_.valor }}</li>
+                <ul >
+                  <li v-for="list_ in new__data.list__management" :key="list_.id" >{{ list_.valor }}</li>
                 </ul>
               </div>
             </v-card-text>
@@ -194,6 +194,9 @@ export default {
       ],
     };
   },
+  computed:{
+
+  }
 };
 </script>
 <style lang="scss">

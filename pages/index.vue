@@ -1,53 +1,7 @@
 <template >
   <div class=" mt-16 mt-xl-16 mt-lg-16 " >
-    <!-- <div class="card__index__fist ">
-      <v-container class="sessao__margin my-xl-16 my-lg-16 position-relative">
-        <v-row class="justify-center" align="center">
-          <v-col class="ma-xs-5" cols="12" lg="6" xl="4" md="6" sm="8" xs="6">
-            <index__sessao />
-            <nuxt-img
-            src="/img/will__persona_aibscp.webp"
-            alt="Wilkson cardoso, UX / UI"
-            width="100%"
-            height="100%"
-            sizes=" sm:211px md:260px lg:380px "
-            class="will__img"
-            loading="lazy"
-          />
-          </v-col>
-          <v-col class="text-center text-lg-left text-xl-left mb-16"  cols="12" lg="6" xl="5" md="6" sm="12" xs="6">
-            <span class="font-weight-medium primary--text text-h3">
-                UX / UI </span
-              >
-            <h1 class="text-h2 text-lg-h1 font-weight-black ">Wilkson</h1>
-            <h1 class="text-h2 text-lg-h1 font-weight-black mb-3 ">
-
-              Cardoso
-            </h1>
-            <h5 class="grey--text lighten-1">HOJE MELHOR DO QUE ONTEM, AMANHÃ MELHOR DO QUE HOJE.</h5>
-            <v-divider class="my-3"></v-divider>
-            <v-chip
-              class="ma-2 chip__fist "
-              color="primary"
-              outlined
-              v-for="icon in icons"
-              :key="icon.id"
-            >
-              <v-icon color="primary" left> mdi-{{ icon.icon }} </v-icon>
-              {{ icon.text }}
-            </v-chip>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div> -->
-    <!-- <top__sessao /> -->
     <fist__sessao />
-
     <sobre__will__atualizado />
-    <!-- <sobre__bottom/> -->
-
-
-
     <div class="card__index__secon  ">
       <sessao__secon  class="sessao__margin"/>
     </div>
@@ -59,63 +13,27 @@
 </template>
 <script>
 import fist__sessao from "../components/index/fist/fist__sessao.vue";
-
-
-import top__sessao from "../components/divider/Top__index__sessao.vue";
-// divider sessao
-
-import sessao__secon from "../components/index/secon__sessao.vue"; //hard skill
-// conteudo de sessao
-
-import menu_top from "../components/menu/top.vue";
-
+import sessao__secon from "../components/index/secon__sessao.vue";
+//hard skill
 //sesao cards
 import sessao__cards from '../components/index/session__cards.vue'
 
 // sessao sobre will
 import sobre__will__atualizado from "../components/index/sobre/session__sobre.vue";
-import sobre__bottom from "../components/index/sobre/divider__session__bottom.vue";
-
 
 import desafio__session from '../components/index/session__desafio.vue'
 // sessão freelance
-
-
-
-import end__session from "../components/end__session/end.vue";
-// end sessao
-
-import menu__slin from '../components/menu/menu__slin.vue'
 
 export default {
   name: "IndexPage",
 
   components: {
-    desafio__session,
-    sessao__cards,
-    sobre__will__atualizado,
-    sobre__bottom,
-    menu_top,
     fist__sessao,
+    sobre__will__atualizado,
     sessao__secon,
-    end__session,
-    menu__slin
-
+    sessao__cards,
+    desafio__session,
 },
-  computed: {
-    cssProps() {
-      return {
-        "--bs-primary": this.$vuetify.theme.themes.light.primary,
-      };
-    },
-    background() {
-      return {
-        background: this.$vuetify.theme.themes.light.primary,
-      };
-    },
-  },
-
-
 
 };
 </script>
