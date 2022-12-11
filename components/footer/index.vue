@@ -23,7 +23,6 @@
           </p>
           <v-divider class="my-3  d-sm-none"></v-divider>
           <p class="text-caption   d-sm-none">Me encontre, através</p>
-          <v-btn to="/perfil">teste</v-btn>
           <links class=" d-sm-none" />
 
         </v-col>
