@@ -1,6 +1,6 @@
 <template >
   <div>
-    <a to="/" aria-label="retornar ao inicio">
+    <NuxtLink  to="/"  aria-label="retornar ao inicio">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 187.076 60.568" class="logo__">
         <g id="Grupo_53" data-name="Grupo 53" transform="translate(100.567 21.866)">
           <g id="logo">
@@ -69,7 +69,7 @@
           </g>
         </g>
       </svg>
-    </a>
+    </NuxtLink>
   </div>
 </template>
 <script>
