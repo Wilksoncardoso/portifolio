@@ -1,12 +1,11 @@
 <template >
-  <div class="perfil" >
+  <div class="perfil">
     <v-container>
       <v-row class="justify-center " align="center" style="height: 100vh;">
         <v-col cols="12" lg="4" xl="3" class="text-center">
           <v-avatar width="100%" height="100%" class="my-3 mx-auto" elevation="10">
             <nuxt-img src="img/will__perfil_aog6zz.webp" alt="Wilkson cardoso, UX / UI"
-              sizes=" sm:384px md:400px lg:400px xl:110vw"  class=" mt-5 " loading="lazy"
-              preload />
+              sizes=" sm:384px md:400px lg:400px xl:110vw" class=" mt-5 " loading="lazy" preload />
           </v-avatar>
         </v-col>
         <v-col class="mt-xl-16 mt-lg-16 " cols="12" lg="6" xl="5">
@@ -20,6 +19,11 @@
             <h5 class=" lighten-1 grey--text font-weight-light">
               29 anos, Belém - Pará
             </h5>
+
+            <h5 class="mt-6">Entre em contato</h5>
+            <v-divider class="mx-2 my-1"></v-divider>
+            <links />
+
             <h5 class="mt-6">Especialidades</h5>
             <v-divider class="mx-2 my-1"></v-divider>
 
@@ -47,6 +51,7 @@
   </div>
 </template>
 <script>
+import links from '../links/index.vue'
 export default {
 
   data() {
@@ -75,6 +80,8 @@ export default {
       ],
     }
   },
-
+  components: {
+    links
+  }
 }
 </script>
