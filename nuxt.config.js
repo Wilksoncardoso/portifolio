@@ -85,9 +85,7 @@ export default {
       { rel: "apple-touch-icon", sizes: "144x144", href: "/icon/144x144.png" },
       { rel: "apple-touch-icon", sizes: "152x152", href: "/icon/152x152.png" },
       { rel: "apple-touch-icon", sizes: "180x180", href: "/icon/180x180.png" },
-      // { rel: "stylesheet", sizes: "font", href: "/font/MYRIADPRO-REGULAR.woff" },
-      // { rel: "stylesheet", sizes: "font", href: "/font/MYRIADPRO-BOLDCOND.woff" },
-      // { rel: "stylesheet", sizes: "font", href: "/css/materialdesignicons.css" },
+
     ],
     noscript: [
       {
