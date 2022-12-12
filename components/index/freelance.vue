@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div id="consultoria" :style="cssProps">
 
     <v-container class="">

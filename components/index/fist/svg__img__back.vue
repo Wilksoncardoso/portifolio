@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
     <div>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg__background" viewBox="0 0 751.03 585.072" >
             <defs>

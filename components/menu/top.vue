@@ -328,7 +328,6 @@ export default {
       }
     },
     theme() {
-      // console.log(this.switch1)
       if (this.switch1 === true) {
         this.$vuetify.theme.dark = true;
         localStorage.setItem("dark", true);

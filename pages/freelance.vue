@@ -28,7 +28,6 @@ export default {
       this.$nuxt.$loading.start()
       setTimeout(() => this.$nuxt.$loading.finish()
       , 500)
-      console.log(this.$nuxt.$loading)
     })
   },
 }

@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <v-row class="justify-center" align="center">
       <v-item-group v-model="window" class="shrink ml-5" mandatory>
         <v-item v-for="n in length" :key="n" v-slot="{ active, toggle }">

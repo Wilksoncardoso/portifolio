@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div>
     <v-container class="sessao__margin sessao__hard__skill">
       <v-row class="justify-center">
