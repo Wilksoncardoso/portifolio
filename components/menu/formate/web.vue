@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <div class="card__menu">
       <v-card class=" mx-auto">
@@ -154,7 +154,6 @@ export default {
   mounted() {
     this.cor__primary();
     this.theme__();
-
   },
 };
 </script>

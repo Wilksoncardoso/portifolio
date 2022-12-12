@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div :style="background">
     <v-container>
       <v-row class="justify-center" >

@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <NuxtLink  to="/"  aria-label="retornar ao inicio">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 187.076 60.568" class="logo__">

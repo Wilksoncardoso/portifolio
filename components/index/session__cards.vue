@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div :style="cssProps" class="text-center py-5">
     <v-progress-circular
       v-for="skill in hard_skill"

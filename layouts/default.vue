@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <v-app dark id="app" style="overflow-x:hidden !important; ">
     <menu__slin />
     <Nuxt />

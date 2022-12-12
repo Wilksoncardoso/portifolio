@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <v-navigation-drawer
     v-model="drawer"

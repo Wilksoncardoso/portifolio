@@ -43,14 +43,6 @@ export default {
       },
     ],
     link: [
-      // {
-      //   rel: "preload",
-      //   as: "style",
-      //   media: "all",
-      //   href: "/css/materialdesignicons.css",
-      //   onload:"this.onload=null;this.rel='stylesheet'"
-      // },
-
       {
         rel: "icon",
         sizes: "192x192",
@@ -85,25 +77,12 @@ export default {
       { rel: "apple-touch-icon", sizes: "144x144", href: "/icon/144x144.png" },
       { rel: "apple-touch-icon", sizes: "152x152", href: "/icon/152x152.png" },
       { rel: "apple-touch-icon", sizes: "180x180", href: "/icon/180x180.png" },
-
     ],
-    // noscript: [
-    //   {
-    //     link:[
-    //       {
-    //         rel: "preconnect",
-    //         href: "/css/materialdesignicons.css",
-    //       },
-    //     ]
-    //   },
-    // ],
   },
 
   devServerHandlers: [],
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@mdi/font/css/materialdesignicons.min.css'
-  ],
+  css: ["@mdi/font/css/materialdesignicons.min.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -115,12 +94,10 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
-    ['@nuxtjs/vuetify', { iconfont: 'mdi' }],
+    ["@nuxtjs/vuetify", { iconfont: "mdi" }],
     "@nuxtjs/google-fonts",
     "@nuxt/image",
-
   ],
-
 
   googleFonts: {
     display: "swap",
@@ -136,10 +113,10 @@ export default {
   modules: ["@nuxt/http", "@nuxt/image"],
   image: {
     provider: "cloudinary",
-    cloudinary:{
+    cloudinary: {
       // baseURL:'https://a.storyblok.com/f/182555/'
-      baseURL:'https://res.cloudinary.com/djtomydsv/image/upload/v1667952287/'
-    }
+      baseURL: "https://res.cloudinary.com/djtomydsv/image/upload/v1667952287/",
+    },
     // domains: ['http://localhost:8000']
   },
 
@@ -169,7 +146,12 @@ export default {
       iconfont: "mdiSvg",
     },
   },
-  loading: { color: '#0E58A5' },
+
+  // loading: {
+  //   color: "#0E58A5",
+  //   height: "1px",
+  // },
+
   server: {
     port: 8000, // default: 3000
     host: "0.0.0.0", // default: localhost,
@@ -196,17 +178,16 @@ export default {
     subFolders: false,
     fallback: "404.html",
     ignore: [
-      '.nuxt', // buildDir
-      'static', // dir.static
-      'dist', // generate.dir
-      'node_modules',
-      '.**/*',
-      '.*',
-      'README.md'
+      ".nuxt", // buildDir
+      "static", // dir.static
+      "dist", // generate.dir
+      "node_modules",
+      ".**/*",
+      ".*",
+      "README.md",
     ],
     cache: {
-      ignore: ['renovate.json'] // ignore changes applied on this file
-    }
+      ignore: ["renovate.json"], // ignore changes applied on this file
+    },
   },
-
 };

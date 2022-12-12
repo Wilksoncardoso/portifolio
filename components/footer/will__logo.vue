@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div class="text-center">
     <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1027.507 711.607" >
    <g id="Grupo_53-2" data-name="Grupo 53-2">

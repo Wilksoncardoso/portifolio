@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <svg
       id="adobe-illustrator"

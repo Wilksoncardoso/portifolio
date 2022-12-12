@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <v-dialog transition="dialog-top-transition" max-width="400">
       <template v-slot:activator="{ on, attrs }">

@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div class=" mt-16 mt-xl-16 mt-lg-16 " >
     <fist__sessao />
     <sobre__will__atualizado />
@@ -26,7 +26,11 @@ import desafio__session from '../components/index/session__desafio.vue'
 
 export default {
   name: "IndexPage",
+  loading: false,
 
+  data: () => ({
+      loading: false
+    }),
   components: {
     fist__sessao,
     sobre__will__atualizado,
@@ -34,6 +38,16 @@ export default {
     sessao__cards,
     desafio__session,
 },
+
+mounted() {
+    this.$nextTick(() => {
+      console.log(this.$nuxt.$loading)
+      this.$nuxt.$loading.start()
+
+       setTimeout(() => this.$nuxt.$loading.finish()
+      , 500)
+    })
+  },
 
 };
 </script>

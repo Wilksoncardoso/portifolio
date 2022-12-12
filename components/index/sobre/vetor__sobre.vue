@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 182.249 165.913">
   <g id="Grupo_75" data-name="Grupo 75" transform="translate(-898 -1721)">

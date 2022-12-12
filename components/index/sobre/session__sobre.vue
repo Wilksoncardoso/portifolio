@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div :style="cssProps" id="Sobre">
     <v-container>
       <v-row class="py-10 row justify-space-around align-center">

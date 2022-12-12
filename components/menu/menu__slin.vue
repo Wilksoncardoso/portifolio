@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
     <menu_web class="menu__web" :links="links"/>
     <menu_mob class="menu__mob" :links="links"/>

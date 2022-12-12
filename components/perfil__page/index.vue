@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div >
     <v-container>
       <v-row class="justify-center perfil" align="center">

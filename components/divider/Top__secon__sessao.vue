@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div>
    <div style="overflow: hidden;">
   <svg

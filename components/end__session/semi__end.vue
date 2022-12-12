@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div class="py-15" id="Marketing">
     <v-container>
       <v-row class="justify-space-around align-center">

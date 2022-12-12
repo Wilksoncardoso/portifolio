@@ -1,4 +1,4 @@
-<template >
+<template lang="html">
   <div class="mt-10">
     <v-row align-content="center" justify="center">
       <v-col cols="12" lg="6" xl="5" style="background:blue">
