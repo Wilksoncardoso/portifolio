@@ -1,7 +1,7 @@
 <template lang="html">
   <div :style="cssProps" id="Sobre">
     <v-container>
-      <v-row class="py-10 row justify-space-around align-center">
+      <v-row class="py-16 row justify-space-around align-center">
         <v-col cols="12" xl="4" lg="5" sm="6">
           <v-card elevation="10" class="pa-10">
             <h1 class="mb-0"><span class="primary--text">#</span> Sobre</h1>

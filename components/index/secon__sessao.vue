@@ -3,12 +3,7 @@
     <v-container class="sessao__margin sessao__hard__skill">
       <v-row class="justify-center">
         <v-col cols="12">
-          <h1 class="mb-0">
-            <span class="text-h4 primary--text mr-2">#</span> HARD SKILLS
-          </h1>
-          <h5 class="mb-3 ml-7 font-weight-regular grey--text lighten-1">
-            Investir em conhecimento sempre rende os melhores juros.
-          </h5>
+
         </v-col>
         <v-col
           cols="12"

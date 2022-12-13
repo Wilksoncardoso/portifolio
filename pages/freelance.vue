@@ -14,7 +14,6 @@ import semi__end from "../components/end__session/semi__end.vue";
 export default {
   name: "FreelancePage",
 
-  loading: false,
   components:{
     Freelance,
     semi__end,
@@ -23,13 +22,7 @@ export default {
     color(){
     }
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish()
-      , 500)
-    })
-  },
+
 }
 </script>
 <style lang="">

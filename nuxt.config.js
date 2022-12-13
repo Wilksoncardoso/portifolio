@@ -147,11 +147,6 @@ export default {
     },
   },
 
-  // loading: {
-  //   color: "#0E58A5",
-  //   height: "1px",
-  // },
-
   server: {
     port: 8000, // default: 3000
     host: "0.0.0.0", // default: localhost,

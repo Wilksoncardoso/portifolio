@@ -1,69 +1,126 @@
 <template lang="html">
-  <div :style="cssProps" class="text-center py-5">
-    <v-progress-circular
-      v-for="skill in hard_skill"
-      :rotate="360"
-      :size="120"
-      :width="5"
-      :value="skill.value"
-      :color="skill.color"
-      :key="skill.id"
-      class="ma-4"
-      :aria-labelledby="skill.label"
-      :area-alt="skill.label"
-    >
-      <h5 >
-        {{ skill.label }} <br />
-        <v-divider class="mt-1 white"></v-divider>
+  <div :style="cssProps" class=" py-16">
 
-        <h1 class="display-1 font-weight-black">{{ skill.value }}%</h1>
-      </h5>
-    </v-progress-circular>
-    <v-divider></v-divider>
-    <v-row class="justify-center">
-      <v-col cols="10" lg="4" xl="3" md="5" class="mt-7 mb-3" :style="win">
-        <h1 class="white--text"># SOFT SKILL</h1>
-        <h5 class="font-weight-regular white--text">
-          Habilidades adquiridas na profissão
-        </h5>
-      </v-col>
-    </v-row>
+    <v-container>
+      <v-row class="justify-center">
+        <v-col cols="12" class="text-center py-4">
+          <h1 class="mb-0">
+            <span class="text-h4 primary--text mr-2">#</span> SOFT SKILL
+          </h1>
+          <h5 class="mb-3 ml-7 font-weight-regular grey--text lighten-1">
+            Habilidades adquiridas na profissão
+          </h5>
+        </v-col>
+
+        <v-col xl="3" v-for="data_ in itens" :key="data_.id">
+          <v-card elevation="10" class=" px-3 py-8 " >
+            <v-row class="px-5">
+              <h2 class="mb-2">{{data_.titulo}}</h2>
+              <v-card elevation="10" class="px-5 my-2"  v-for="list in data_.list" :key="list.id" style="width: 100%;">
+                <h6 class="pt-2 mb-1" >{{ list.label }}</h6>
+                <v-divider></v-divider>
+                <v-progress-linear :value="list.value" class="my-3" style="height: 20px;">
+                  <template v-slot:default="{ value }">
+                    <strong>{{ Math.ceil(value) }}%</strong>
+                  </template>
+                </v-progress-linear>
+              </v-card>
+            </v-row>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
+
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      hard_skill: [
+      itens: [
         {
           id: 0,
-          label: "Adaptação",
-          value: 92,
-          color: "white",
+          titulo: 'Pessoal',
+          list: [
+            {
+              id: 0,
+              label: "Adaptação",
+              value: 92,
+            },
+            {
+              id: 1,
+              label: "Autodidata",
+              value: 98,
+            },
+            {
+              id: 2,
+              label: "Aprendizado",
+              value: 95,
+            },
+            {
+              id: 3,
+              label: "Solidário",
+              value: 90,
+            },
+            {
+              id: 4,
+              label: "Otimista ",
+              value: 92,
+            },
+          ]
         },
         {
           id: 1,
-          label: "Autodidata",
-          value: 98,
-          color: "white",
+          titulo: 'Equipe',
+          list: [
+            {
+              id: 0,
+              label: "Gestão  ",
+              value: 97,
+            },
+            {
+              id: 1,
+              label: "Trabalhar sobre pressão ",
+              value: 97,
+            },
+            {
+              id: 2,
+              label: "Comunicação assertiva ",
+              value: 97,
+            },
+            {
+              id: 3,
+              label: "Colaboração",
+              value: 97,
+            },
+            {
+              id: 4,
+              label: "Profissional Multidisciplinar ",
+              value: 97,
+            },
+
+          ]
         },
-        {
-          id: 2,
-          label: "Aprendizado",
-          value: 95,
-          color: "white",
-        },
-        {
-          id: 3,
-          label: "Colaboração",
-          value: 90,
-          color: "white",
-        },
+
+      ],
+      hard_data: [
+
+
+
+
         {
           id: 4,
-          label: "Comunicação",
-          value: 89,
-          color: "white",
+          label: "Trabalho em equipe",
+          value: 97,
+        }, {
+          id: 4,
+          label: "Comunicação assertiva ",
+          value: 97,
+        }, {
+          id: 4,
+          label: "Comunicação assertiva ",
+          value: 97,
         },
       ],
     };
@@ -79,19 +136,22 @@ export default {
           };
       }
     },
+    color() {
+      return { color: this.$vuetify.theme.themes.dark.primary }
+    },
     win() {
       switch (this.$vuetify.theme.dark) {
         case true:
           return [{
             background: this.$vuetify.theme.themes.dark.primary,
             boxShadow: "inset 0px 3px 6px #00000029",
-            borderRadius:'10px'
+            borderRadius: '10px'
           }];
         case false:
           return [{
             background: this.$vuetify.theme.themes.light.primary,
             boxShadow: "inset 0px 3px 6px #00000029",
-            borderRadius:'10px'
+            borderRadius: '10px'
 
           }];
       }
@@ -101,4 +161,5 @@ export default {
 };
 </script>
 <style lang="scss">
+
 </style>
