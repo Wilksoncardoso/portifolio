@@ -1,5 +1,5 @@
 <template lang="html">
-  <div :style="cssProps" class=" py-16">
+  <div :style="cssProps" class=" py-10">
 
     <v-container>
       <v-row class="justify-center">
@@ -7,23 +7,26 @@
           <h1 class="mb-0">
             <span class="text-h4 primary--text mr-2">#</span> SOFT SKILL
           </h1>
-          <h5 class="mb-3 ml-7 font-weight-regular grey--text lighten-1">
+          <h5 class="mb-3 ml-7 font-weight-regular ">
             Habilidades adquiridas na profissão
           </h5>
         </v-col>
 
         <v-col xl="3" v-for="data_ in itens" :key="data_.id">
-          <v-card elevation="10" class=" px-3 py-8 " >
+          <v-card elevation="15" class=" px-3 py-8 ">
             <v-row class="px-5">
-              <h2 class="mb-2">{{data_.titulo}}</h2>
-              <v-card elevation="10" class="px-5 my-2"  v-for="list in data_.list" :key="list.id" style="width: 100%;">
-                <h6 class="pt-2 mb-1" >{{ list.label }}</h6>
-                <v-divider></v-divider>
-                <v-progress-linear :value="list.value" class="my-3" style="height: 20px;">
-                  <template v-slot:default="{ value }">
-                    <strong>{{ Math.ceil(value) }}%</strong>
-                  </template>
-                </v-progress-linear>
+              <h2 class="mb-2"><span class="text-h5 primary--text mr-2">#</span>{{ data_.titulo }}</h2>
+              <h5 class="mb-2">{{ data_.description }}</h5>
+              <v-card elevation="5" class="px-5 my-2" v-for="list in data_.list" :key="list.id" style="width: 100%;">
+                <div class="grup-itens">
+                  <div class="group-item porcentagem">
+                    <span class="px-1 py-1 " :style="win">{{ list.value }}%</span> </div>
+                  <div class="group-item conteudo">
+                    <h6 class="pt-2 mb-1">{{ list.label }} </h6>
+                    <v-divider></v-divider>
+                    <v-progress-linear :value="list.value" class="my-3" style="height: 10px;"></v-progress-linear>
+                  </div>
+                </div>
               </v-card>
             </v-row>
           </v-card>
@@ -42,6 +45,7 @@ export default {
         {
           id: 0,
           titulo: 'Pessoal',
+          description: '',
           list: [
             {
               id: 0,
@@ -73,11 +77,13 @@ export default {
         {
           id: 1,
           titulo: 'Equipe',
+          description: '',
+
           list: [
             {
               id: 0,
               label: "Gestão  ",
-              value: 97,
+              value: 98,
             },
             {
               id: 1,
@@ -97,33 +103,14 @@ export default {
             {
               id: 4,
               label: "Profissional Multidisciplinar ",
-              value: 97,
+              value: 92,
             },
 
           ]
         },
 
       ],
-      hard_data: [
-
-
-
-
-        {
-          id: 4,
-          label: "Trabalho em equipe",
-          value: 97,
-        }, {
-          id: 4,
-          label: "Comunicação assertiva ",
-          value: 97,
-        }, {
-          id: 4,
-          label: "Comunicação assertiva ",
-          value: 97,
-        },
-      ],
-    };
+    }
   },
   computed: {
     cssProps() {
@@ -136,22 +123,27 @@ export default {
           };
       }
     },
-    color() {
-      return { color: this.$vuetify.theme.themes.dark.primary }
-    },
+
     win() {
       switch (this.$vuetify.theme.dark) {
         case true:
           return [{
-            background: this.$vuetify.theme.themes.dark.primary,
+            background: this.$vuetify.theme.themes.dark.primary + '70',
+            fontSize:'15px',
+            color: 'white',
             boxShadow: "inset 0px 3px 6px #00000029",
-            borderRadius: '10px'
+            borderRadius: '3px',
+            fontWeight: '800',
+            border: '1px solid'+this.$vuetify.theme.themes.dark.primary
           }];
         case false:
           return [{
-            background: this.$vuetify.theme.themes.light.primary,
+            background: this.$vuetify.theme.themes.light.primary + '40',
+            fontSize:'15px',
             boxShadow: "inset 0px 3px 6px #00000029",
-            borderRadius: '10px'
+            borderRadius: '3px',
+            fontWeight: '800',
+            border: '1px solid'+this.$vuetify.theme.themes.light.primary
 
           }];
       }
@@ -161,5 +153,18 @@ export default {
 };
 </script>
 <style lang="scss">
+.ultimo {
+  display: none !important;
+}
+
+.v-icon--link .accent--text {
+  color: #353535 !important;
+}
+
+.grup-itens {
+  grid-template-columns: 15% auto;
+  display: grid;
+  align-items: center;
+}
 
 </style>
