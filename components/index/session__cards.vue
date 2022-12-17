@@ -17,10 +17,11 @@
             <v-row class="px-5">
               <h2 class="mb-2"><span class="text-h5 primary--text mr-2">#</span>{{ data_.titulo }}</h2>
               <h5 class="mb-2">{{ data_.description }}</h5>
-              <v-card elevation="5" class="px-5 my-2" v-for="list in data_.list" :key="list.id" style="width: 100%;">
+              <v-card elevation="5" class="px-2 px-xl-5 my-2" v-for="list in data_.list" :key="list.id" style="width: 100%;">
                 <div class="grup-itens">
-                  <div class="group-item porcentagem">
-                    <span class="px-1 py-1 " :style="win">{{ list.value }}%</span> </div>
+                  <div class="group-item ">
+                    <span class="px-1 py-1 porcentagem" :style="win">{{ list.value }}%</span>
+                  </div>
                   <div class="group-item conteudo">
                     <h6 class="pt-2 mb-1">{{ list.label }} </h6>
                     <v-divider></v-divider>
@@ -129,22 +130,13 @@ export default {
         case true:
           return [{
             background: this.$vuetify.theme.themes.dark.primary + '70',
-            fontSize:'15px',
             color: 'white',
-            boxShadow: "inset 0px 3px 6px #00000029",
-            borderRadius: '3px',
-            fontWeight: '800',
-            border: '1px solid'+this.$vuetify.theme.themes.dark.primary
+            border: '1px solid' + this.$vuetify.theme.themes.dark.primary
           }];
         case false:
           return [{
             background: this.$vuetify.theme.themes.light.primary + '40',
-            fontSize:'15px',
-            boxShadow: "inset 0px 3px 6px #00000029",
-            borderRadius: '3px',
-            fontWeight: '800',
-            border: '1px solid'+this.$vuetify.theme.themes.light.primary
-
+            border: '1px solid' + this.$vuetify.theme.themes.light.primary
           }];
       }
     },
@@ -162,9 +154,15 @@ export default {
 }
 
 .grup-itens {
-  grid-template-columns: 15% auto;
+  grid-template-columns: 18% auto;
   display: grid;
   align-items: center;
 }
 
+.porcentagem {
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: 800;
+  box-shadow: inset 0px 3px 6px #00000029;
+}
 </style>
