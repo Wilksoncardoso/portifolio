@@ -2,6 +2,7 @@
   <div>
     <Freelance class="sessao__margin" />
     <semi__end />
+
   </div>
 </template>
 

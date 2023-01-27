@@ -1,8 +1,7 @@
 <template lang="html">
   <div :style="cssProps" id="Sobre">
-    <v-container>
-      <v-row class="py-16 row justify-space-around align-center">
-        <v-col cols="12" xl="4" lg="5" sm="6">
+      <v-row class="py-16 row justify-space-around align-center max-tela">
+        <v-col cols="12" xl="5" lg="5" sm="6">
           <v-card elevation="10" class="pa-10">
             <h1 class="mb-0"><span class="primary--text">#</span> Sobre</h1>
             <h5 class="mb-3 ml-7 font-weight-regular grey--text lighten-1">
@@ -23,11 +22,10 @@
             </p>
           </v-card>
         </v-col>
-        <v-col class="text" cols="8" xl="4" lg="5"  sm="5">
+        <v-col class="text" cols="8" xl="5" lg="5"  sm="5">
           <vetor__sessao    />
         </v-col>
       </v-row>
-    </v-container>
   </div>
 </template>
 <script>

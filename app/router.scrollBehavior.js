@@ -1,4 +1,6 @@
 export default function async (to, from, savedPosition) {
+  console.log(savedPosition)
+
   if (savedPosition) {
     return savedPosition
   }
@@ -12,7 +14,6 @@ export default function async (to, from, savedPosition) {
         setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
       })
   }
-
   if (to.hash) {
     let el =  findEl(to.hash)
     if ('scrollBehavior' in document.documentElement.style) {

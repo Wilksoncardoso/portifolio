@@ -1,8 +1,7 @@
 <template lang="html">
-    <div class="my-16">
-
+    <div class="my-16 ">
         <v-container>
-            <v-row class=" justify-center align-center">
+            <v-row class=" justify-center align-center ">
                 <v-col cols="12" sm="4" md="12" lg="4" xl="4" >
                     <h1 class="mb-0">
                         <span class="text-h4 primary--text mr-2">#</span> HARD SKILLS

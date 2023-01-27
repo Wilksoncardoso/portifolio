@@ -11,11 +11,15 @@ $md: 1264px;
 $lg: 1904px;
 $body-font-family: "Montserrat" !important;
 
+.max-tela{
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
+
 // @font-face {
 //   font-family: Material Icons;
 //   font-display: swap;
 //   src: url("https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css");
 // }
-
 
 

@@ -5,7 +5,7 @@
         <background />
 
         <v-container>
-            <v-row class="index--card justify-center index-session" align="center">
+            <v-row class="index--card justify-center index-session max-tela" align="center">
                 <v-col cols="12" lg="4" xl="4">
                     <h1 class="font-weight-medium primary--text mb-3">UX / UI / DEV</h1>
                     <h1 class="text-h2 text-lg-h1 font-weight-black mb-3 ">Wilkson</h1>
@@ -114,7 +114,7 @@ export default {
     list-style: none;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: 200px 200px ;
     .list-item{
         padding: 20px 15px;
         margin: 5px;
